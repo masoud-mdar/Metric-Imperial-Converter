@@ -12,7 +12,7 @@ const App = () => {
     const [result, setResult] = useState({})
     const [display, setDisplay] = useState("")
 
-    const BASE_URL = "http://localhost:5000"
+    const BASE_URL = "https://metric-imperial-converter-m.herokuapp.com"
 
     const metricUnitArray = ["km", "L", "kg"]
     const impUnitArray = ["mi", "gal", "lbs"]
@@ -101,7 +101,7 @@ const App = () => {
                     </div>
 
                 ) : (
-                    
+
                     <Converter
                         data={{
                             result: result,
